@@ -131,4 +131,7 @@ The dataset is not included in this repository. No external data, APIs or lookup
 
 ## Team
 
-**ByteForce**, IIIT Kottayam: [Ajeet Kumar](https://github.com/ajeetkartikay) and Anu Priya.
+**ByteForce**, IIIT Kottayam
+
+- [Ajeet Kumar](https://github.com/ajeetkartikay): blocking, LightGBM matcher, stacker, pipeline engineering
+- [Anu Priya](https://github.com/anupriya2104): cross-encoder ensemble run (mpnet), validation and documentation
