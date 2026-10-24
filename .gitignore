@@ -1,0 +1,12 @@
+# data and generated artefacts are not tracked
+data/
+dataset/
+output/
+out/
+*.tsv
+*.parquet
+*.zip
+ce_model/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
