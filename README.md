@@ -76,6 +76,21 @@ Held-out training entities, evaluated at **full test density**:
 
 Hidden test set: 0.641 → 0.917 → 0.948 → **0.951**.
 
+## Key data insights
+
+![Sampling bias](analysis/figures/04_sampling_bias.png)
+
+- **Validate at production scale:** a 10% sample overstated accuracy by 0.2 F0.5, because sampling removes the
+  look-alike businesses that make the task hard.
+- **Profile before you model:** every true match shares the country and a name or address token, but only 4.8% share a
+  postcode, which settled the candidate-search design.
+- **Break errors down before fixing them:** two thirds of wrong merges were near-identical records belonging to no
+  business, which led to the sibling-agreement features.
+
+![Error analysis](analysis/figures/06_error_analysis.png)
+
+Full analysis with all seven charts: **[analysis/README.md](analysis/README.md)**.
+
 ## Engineering lessons
 
 - **Sampling hides the hard cases.** A 10% development sample scored 0.92 with a simple rule; the same rule scored
@@ -101,6 +116,9 @@ src/
 tests/
   make_synthetic.py      synthetic data in the pipeline's input format
   run_smoke.sh           end-to-end run on synthetic data (CPU, about 75 s)
+analysis/
+  README.md              data profiling, error analysis and key insights (7 charts)
+  make_figures.py        regenerates the charts
 docs/
   METHODOLOGY.md         detailed methodology and error analysis
 ```
