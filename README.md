@@ -7,7 +7,6 @@
 
 ResolvAI matches **10 million noisy business records** from two independent data sources to **1.7 million reference
 businesses** across the US, India and France, using only business names and addresses.
-A group project by team **ByteForce** (Ajeet Kumar, Anu Priya).
 
 **Result:** **F0.5 = 0.951** on a hidden test set (macro, precision-weighted), up from 0.641 for a similarity baseline.
 Held-out validation score 0.970.
