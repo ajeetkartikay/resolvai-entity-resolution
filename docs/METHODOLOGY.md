@@ -1,9 +1,4 @@
 # ResolvAI: Methodology
-
-**Team:** ByteForce  
-**Members:** Ajeet Kumar, Anu Priya (IIIT Kottayam)  
-**Date:** September 2026
-
 ---
 
 ## 1. Executive Summary
