@@ -144,4 +144,4 @@ Full pipeline (put the seven input TSVs anywhere under `<root>`; scripts find fi
 Every script ends with a self-check of the output format (one row per entity, no duplicates, valid IDs, matches ⊆
 candidates).
 
-The dataset is not included in this repository. No external data, APIs or lookups were used.
+No external data, APIs or lookups were used.
